@@ -43,6 +43,25 @@ Q6 : What are the Spring boot common annotations?
 Ans : 
     > @EnableAutoConfiguration – It enable auto-configuration mechanism.
     > @ComponentScan – enable component scanning in application classpath.
-    > @SpringBootApplication – enable all 3 above three things in one step i.e. enable auto-configuration mechanism, enable component scanning and register extra beans in the context
+    > @SpringBootApplication – enable all 3 above three things in one step i.e. enable auto-configuration mechanism, enable component               scanning and register extra beans in the context
+    
+Q7 : Spring vs Spring Boot 
+Ans : 
+    Spring :
+            > A web application framework based on Java
+            > Provides tools and libraries to create customized web applications
+            > Spring is more complex than Spring Boot
+            > 
+    Spring Boot : 
+            > A module of Spring
+            > Used to create a Spring application project which can just run/ execute
+            > Spring Boot is less complex than the Spring framework
+ 
+ Q8 : What is the difference between RequestMapping and GetMapping?
+ Ans : The @GetMapping is a composed annotation that acts as a shortcut for @RequestMapping(method = RequestMethod.GET). Both these             methods support the consumes. The consume options are :
+
+        consumes = “text/plain”
+        consumes = {“text/plain”, “application/*”}
+        
 
 
