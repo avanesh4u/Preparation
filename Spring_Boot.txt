@@ -1,0 +1,48 @@
+Q1 :  What is Spring Boot? Why should you use it?
+Ans : First of all Spring Boot is not a framework, it is a way to ease to create stand-alone application with minimal or zero configurations. It is approach to develop spring based application with very less configuration. 
+It provides defaults for code and annotation configuration to quick start new spring projects within no time.
+If someone has to start a new spring project we have to add build path or add maven dependencies, configure application server, 
+add spring configuration . So a lot of effort is required to start a new spring project as we have to currently do everything from scratch. Spring Boot is the solution to this problem. Spring boot has been built on top of existing spring framework.
+Using spring boot we avoid all the boilerplate code and configurations that we had to do previously
+
+Why ? Advantages .
+
+    > It provides a lot of default configurations which help you to create Spring application faster.
+    > It comes with embedded tomcat or jetty server, so you don’t have to deploy jar.
+    > It reduces development code by avoiding a lot of boilerplate code.
+    > It increases productivity as you can create Spring application quickly.
+    > It provides a lot of starter project for easy maven integration.You don’t have to worry about version mismatch.
+    > You can quickly create using sample project using spring boot initializer
+    
+Q2 : What are disadvantages of Spring boot?
+Ans : If you want to convert your old spring application to Spring boot application, it may not be straight forward and can be time consuming.
+
+Q3 :  How can you run Spring boot application on custom port?
+Ans : You can simply put server.port properties in application.properties.
+      For example:server.port=8050
+
+Q4 : What is DevTools in Spring boot?
+Ans : Spring boot comes with DevTools which is introduced to increase the productivity of developer. You don’t need to redeploy your application every time you make the changes.Developer can simply reload the changes without restart of the server. 
+It avoids pain of redeploying application every time when you make any change. This module will be disabled in production environment.
+
+Q5 : What is actuator in Spring boot?
+Ans : Spring boot actuator is one of the most important features of Spring boot. It is used to access current state of running application in production environment
+Spring boot actuator will help you to monitor your application in production environment.
+Actuator module exposes set of REST endpoints that can be directly accessed as a HTTP URL to check the status.
+      <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-actuator</artifactId>
+      </dependency>
+      
+     > /health – Shows application health information (a simple ‘status' when accessed over an unauthenticated connection or full message details when authenticated); it's not sensitive by default
+     > /info – Displays arbitrary application info; not sensitive by default
+     > /metrics – Shows ‘metrics' information for the current application; it's also sensitive by default
+     > /trace – Displays trace information (by default the last few HTTP requests)
+
+Q6 : What are the Spring boot common annotations?
+Ans : 
+    > @EnableAutoConfiguration – It enable auto-configuration mechanism.
+    > @ComponentScan – enable component scanning in application classpath.
+    > @SpringBootApplication – enable all 3 above three things in one step i.e. enable auto-configuration mechanism, enable component scanning and register extra beans in the context
+
+
